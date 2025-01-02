@@ -1,69 +1,72 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export const Contact = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Thanks for subscribing!");
+    setEmail("");
+  };
+
   return (
-    <section className="py-24">
-      <div className="container px-4">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-2xl mx-auto text-center"
-        >
-          <span className="text-sm font-medium text-primary">Contact</span>
-          <h2 className="mt-3 text-3xl font-bold">Get in Touch</h2>
-          <p className="mt-4 text-muted-foreground">
-            Have questions? We'd love to hear from you. Send us a message and we'll
-            respond as soon as possible.
-          </p>
-        </motion.div>
+    <section id="contact" className="relative bg-black py-20">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 max-w-xl mx-auto"
+          transition={{ duration: 0.5 }}
+          className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-lg md:p-12"
         >
-          <form className="space-y-6">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-medium">
-                Name
-              </label>
-              <input
-                id="name"
-                type="text"
-                className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                placeholder="Enter your name"
-              />
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+                Let's Connect
+              </h2>
+              <p className="mb-6 text-gray-400">
+                Feel free to reach out for collaborations or just a friendly hello
+              </p>
+              <div className="space-y-4">
+                <a
+                  href="mailto:toluwanimioyetade@gmail.com"
+                  className="block text-blue-400 hover:text-blue-300"
+                >
+                  toluwanimioyetade@gmail.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/toluwanimi-oyetade-017ba7327/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-blue-400 hover:text-blue-300"
+                >
+                  LinkedIn Profile
+                </a>
+              </div>
             </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium">
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                placeholder="Enter your email"
-              />
+            <div>
+              <h3 className="mb-4 text-2xl font-bold text-white">
+                Subscribe to Newsletter
+              </h3>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-gray-400 backdrop-blur-sm focus:border-blue-500 focus:outline-none"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-6 py-3 font-semibold text-white transition-transform hover:scale-105"
+                >
+                  Subscribe
+                </button>
+              </form>
             </div>
-            <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-medium">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                placeholder="Enter your message"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full px-6 py-3 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
+          </div>
         </motion.div>
       </div>
     </section>

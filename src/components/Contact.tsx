@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from "sonner";
+import { Mail, Linkedin } from "lucide-react";
 
 export const Contact = () => {
   const [email, setEmail] = useState("");
@@ -31,16 +32,18 @@ export const Contact = () => {
               <div className="space-y-4">
                 <a
                   href="mailto:toluwanimioyetade@gmail.com"
-                  className="block text-blue-400 hover:text-blue-300"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
                 >
+                  <Mail className="h-5 w-5" />
                   toluwanimioyetade@gmail.com
                 </a>
                 <a
                   href="https://www.linkedin.com/in/toluwanimi-oyetade-017ba7327/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-blue-400 hover:text-blue-300"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
                 >
+                  <Linkedin className="h-5 w-5" />
                   LinkedIn Profile
                 </a>
               </div>

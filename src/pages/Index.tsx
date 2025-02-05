@@ -3,6 +3,9 @@ import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Portfolio } from "@/components/Portfolio";
 import { Contact } from "@/components/Contact";
+import { FAQ } from "@/components/FAQ";
+import { CompanySlider } from "@/components/CompanySlider";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -13,9 +16,12 @@ const Index = () => {
       className="min-h-screen"
     >
       <Hero />
+      <CompanySlider />
       <Features />
       <Portfolio />
+      <FAQ />
       <Contact />
+      <Footer />
     </motion.div>
   );
 };

@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
-import { Rocket, CircuitBoard, Microchip } from "lucide-react";
+import { Rocket, CircuitBoard, Microchip, Bot } from "lucide-react";
 
 export const Portfolio = () => {
   const projects = [
+    {
+      title: "Veno Bot",
+      description: "An advanced AI-powered Discord bot",
+      icon: <Bot className="h-8 w-8 text-indigo-400" />,
+      tech: ["Discord.js", "OpenAI", "Node.js"],
+      link: "https://veno-bot.vercel.app",
+    },
     {
       title: "Quantum Computing Interface",
       description: "A next-gen interface for quantum computing operations",
@@ -58,6 +65,16 @@ export const Portfolio = () => {
                   </span>
                 ))}
               </div>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-blue-400 hover:text-blue-300"
+                >
+                  Visit Project →
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

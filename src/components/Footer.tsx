@@ -18,7 +18,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+              <a href="https://github.com/tolu3025" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
                 <Github className="h-6 w-6" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
@@ -38,7 +38,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Toluwanimi website. All rights reserved.</p>
         </div>
       </div>
     </footer>

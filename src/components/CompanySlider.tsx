@@ -22,7 +22,6 @@ export const CompanySlider = () => {
   return (
     <section className="py-8 bg-transparent">
       <div className="max-w-5xl mx-auto px-4">
-        <h3 className="text-lg font-semibold text-center mb-6 text-gray-600">Trusted by Industry Leaders</h3>
         <div className="relative overflow-hidden">
           <div className="flex justify-center items-center gap-8">
             {companies.map((company, index) => (

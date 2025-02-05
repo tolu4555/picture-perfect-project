@@ -20,18 +20,18 @@ export const CompanySlider = () => {
   }, [companies.length]);
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-xl font-semibold text-center mb-8 text-gray-600">Trusted by Industry Leaders</h3>
+    <section className="py-8 bg-transparent">
+      <div className="max-w-5xl mx-auto px-4">
+        <h3 className="text-lg font-semibold text-center mb-6 text-gray-600">Trusted by Industry Leaders</h3>
         <div className="relative overflow-hidden">
-          <div className="flex justify-center items-center gap-12">
+          <div className="flex justify-center items-center gap-8">
             {companies.map((company, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="w-32 h-16 relative grayscale hover:grayscale-0 transition-all duration-300"
+                className="w-24 h-12 relative grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <img
                   src={company.logo}

@@ -5,9 +5,9 @@ export const Portfolio = () => {
   const projects = [
     {
       title: "Veno Bot",
-      description: "An advanced AI-powered Discord bot",
+      description: "A comprehensive CBT (Computer-Based Testing) application designed specifically for Nigeria Uniosun University students. Features include practice tests, performance analytics, and a user-friendly interface for exam preparation.",
       icon: <Bot className="h-8 w-8 text-indigo-400" />,
-      tech: ["Discord.js", "OpenAI", "Node.js"],
+      tech: ["React", "Node.js", "MongoDB", "Express"],
       link: "https://veno-bot.vercel.app",
     },
     {

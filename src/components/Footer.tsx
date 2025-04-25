@@ -1,16 +1,9 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-gray-50 border-t mt-20">
+  return <footer className="bg-gray-50 border-t mt-20">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="text-center mb-8">
-          <Link to="/" className="text-2xl font-bold">
-            VenoBot
-          </Link>
-          <p className="text-gray-600 mt-2">Revolutionizing Educational Technology</p>
-        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-semibold text-lg mb-4">Navigation</h3>
@@ -47,6 +40,5 @@ export const Footer = () => {
           <p>© {new Date().getFullYear()} Toluwanimi website. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };

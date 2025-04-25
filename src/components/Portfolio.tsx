@@ -6,7 +6,7 @@ export const Portfolio = () => {
   const projects = [
     {
       title: "Veno Bot",
-      description: "A comprehensive CBT (Computer-Based Testing) application designed specifically for Nigeria Uniosun University students. Features include practice tests, performance analytics, and a user-friendly interface for exam preparation.",
+      description: "An innovative educational platform I founded to revolutionize student-educator connections. This comprehensive CBT (Computer-Based Testing) application for Nigeria Uniosun University features adaptive learning, performance analytics, and interactive study tools built with over five years of e-learning development experience.",
       icon: <Bot className="h-8 w-8 text-indigo-400" />,
       tech: ["React", "Node.js", "MongoDB", "Express"],
       link: "https://venobot.online",

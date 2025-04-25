@@ -15,22 +15,22 @@ export const Navigation = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link to="/" className={navigationMenuTriggerStyle() + " text-white"}>
+              <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}>
                 Home
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/about" className={navigationMenuTriggerStyle() + " text-white"}>
+              <Link to="/about" className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}>
                 About
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/portfolio" className={navigationMenuTriggerStyle() + " text-white"}>
+              <Link to="/portfolio" className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}>
                 Portfolio
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white"}>
+              <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}>
                 Contact
               </Link>
             </NavigationMenuItem>

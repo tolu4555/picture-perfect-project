@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { Rocket, CircuitBoard, Microchip, Bot } from "lucide-react";
+import { Bot } from "lucide-react";
 
 export const Portfolio = () => {
   const projects = [
@@ -8,25 +9,7 @@ export const Portfolio = () => {
       description: "A comprehensive CBT (Computer-Based Testing) application designed specifically for Nigeria Uniosun University students. Features include practice tests, performance analytics, and a user-friendly interface for exam preparation.",
       icon: <Bot className="h-8 w-8 text-indigo-400" />,
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://veno-bot.vercel.app",
-    },
-    {
-      title: "Quantum Computing Interface",
-      description: "A next-gen interface for quantum computing operations",
-      icon: <Microchip className="h-8 w-8 text-blue-400" />,
-      tech: ["Quantum.js", "ReactQL", "Neural Networks"],
-    },
-    {
-      title: "Neural Network Visualizer",
-      description: "Real-time 3D visualization of neural network operations",
-      icon: <CircuitBoard className="h-8 w-8 text-purple-400" />,
-      tech: ["BrainJS", "ThreeJS", "WebGL"],
-    },
-    {
-      title: "Space Colony Simulator",
-      description: "Interactive simulation for Mars colony planning",
-      icon: <Rocket className="h-8 w-8 text-pink-400" />,
-      tech: ["Unity3D", "WebAssembly", "AI Pathfinding"],
+      link: "https://venobot.online",
     },
   ];
 
@@ -41,7 +24,7 @@ export const Portfolio = () => {
         >
           Featured Projects
         </motion.h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-1">
           {projects.map((project, index) => (
             <motion.div
               key={index}

@@ -12,9 +12,6 @@ export const Navigation = () => {
   return (
     <div className="fixed top-0 z-50 w-full bg-black/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 items-center px-4">
-        <Link to="/" className="mr-8 text-xl font-bold text-white">
-          VenoBot
-        </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>

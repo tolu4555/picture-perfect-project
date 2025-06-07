@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
+import { Skills } from "@/components/Skills";
 import { Portfolio } from "@/components/Portfolio";
 import { Contact } from "@/components/Contact";
 import { FAQ } from "@/components/FAQ";
@@ -22,6 +23,7 @@ const Index = () => {
         <Hero />
         <CompanySlider />
         <Features />
+        <Skills />
         <Portfolio />
         <FAQ />
         <Contact />
